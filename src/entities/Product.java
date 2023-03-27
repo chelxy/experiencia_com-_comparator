@@ -1,10 +1,10 @@
 package entities;
 
-public class Product implements Comparable<Product>{
-	
+public class Product {
+
 	private String name;
 	private Double price;
-	
+
 	public Product(String name, Double price) {
 		this.name = name;
 		this.price = price;
@@ -29,10 +29,5 @@ public class Product implements Comparable<Product>{
 	@Override
 	public String toString() {
 		return "Product [name=" + name + ", price=" + price + "]";
-	}
-
-	@Override
-	public int compareTo(Product other) {
-		return name.compareTo(other.getName());
 	}
 }
